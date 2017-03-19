@@ -1,0 +1,14 @@
+.days-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 130px);
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background: #ff567e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

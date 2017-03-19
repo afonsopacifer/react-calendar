@@ -59,6 +59,7 @@ class DayCard extends Component {
     const taskList = this.state.tasks;
 
     const newList = taskList.map((task) => {
+
       const isChecked = (task.id === index || task.done === true)
       const toggle = (task.id === index && task.done === true)
 
@@ -77,11 +78,20 @@ class DayCard extends Component {
         content: task.content,
         done: doneState
       })
+
     });
 
     this.setState({
       tasks: newList
     })
+  }
+
+  openDialog() {
+    this.refs.dialog.showModal();
+  }
+
+  closeDialog() {
+    this.refs.dialog.close();
   }
 
   render() {
@@ -101,8 +111,13 @@ class DayCard extends Component {
 
         <h2 className="day-title">{this.props.dayNumber}</h2>
 
-        <input ref="newTask" placeholder="Task name"/>
-        <button onClick={this.addTask.bind(this)}>Add</button>
+        <button onClick={this.openDialog.bind(this)}>New Task</button>
+
+        <dialog className="day-insert-task" ref="dialog">
+          <input ref="newTask" placeholder="Task name"/>
+          <button onClick={this.addTask.bind(this)}>Add</button>
+          <button onClick={this.closeDialog.bind(this)}>close</button>
+        </dialog>
 
         <ul>
           {dayTasks}

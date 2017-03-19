@@ -2,6 +2,12 @@
     border: 1px solid #000;
 }
 
+.day-insert-task {
+    position: relative;
+    border: 0;
+    padding: 0;
+}
+
 .day-title {
     color: red;
 }

@@ -4,28 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+
+    <!-- PWA -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+
+    <!-- SEO -->
+		<meta name="description" content="Calendar for Developers">
+    <title>React Calendar</title>
+
+    <!-- Open graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="React Calendar">
+		<meta property="og:description" content="Calendar for Developers">
+		<meta property="og:url" content="http://afonsopacifer.github.io/react-calendar/">
+		<meta property="og:image" content="http://afonsopacifer.github.io/react-calendar/img/share.png">
+
+		<!-- Twitter cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="React Calendar">
+		<meta name="twitter:description" content="Calendar for Developers">
+		<meta name="twitter:url" content="http://afonsopacifer.github.io/react-calendar/">
+		<meta name="twitter:image" content="http://afonsopacifer.github.io/react-calendar/img/share.png">
+
+		<!-- CSS <3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
   </head>
   <body>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
   </body>
 </html>

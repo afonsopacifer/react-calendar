@@ -1,0 +1,49 @@
+.btn {
+  background-color: #db1a87;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+	margin: 0 2px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.1));
+  cursor: pointer;
+}
+
+.btn:active {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+}
+
+.btn--inactive {
+  background: #e1e1e1;
+}
+
+.btn--inactive:hover {
+  background-image: none;
+  cursor: auto;
+}
+
+.btn--inactive:active {
+  background-image: none;
+}
+
+.btn__icon {
+  width:15px;
+  vertical-align: middle;
+}
+
+.btn__icon--left {
+  margin-right: 5px;
+}
+
+.btn__icon--right {
+  margin-left: 5px;
+}

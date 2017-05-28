@@ -22,10 +22,35 @@ $ npm install
 $ npm start
 ```
 
+## Atomic folder structure
+
+	.
+	├── README.md
+	├── CONTRIBUTING.md
+	├── LICENSE.md
+	├── public/
+	├── src/
+	|   ├── tests/
+	|   ├── stories/
+	|   ├── components/
+	|   |   ├── atoms/
+	|   |   └── molecules/
+	|   ├── assets/
+	|   |   ├── icons/
+	|   |   └── styles/
+	|   |       ├── atoms/
+	|   |       └── molecules/
+	|   ├── CalendarApp.js
+	|   └── index.js
+	├── package.json
+	├── .editorconfig
+	└── .gitignore
+
 ## Tasks available
 
-- `$ npm start` - Run development mode.
-
+- `$ npm start` - Start the development environment.
+- `$ npm run build-storybook` - Build all UI docs.
+- `$ npm run storybook` - Start the UI docs environment.
 
 ## Contributing
 Find on our [issues](https://github.com/afonsopacifer/react-calendar/issues/) the next steps of the project ;)

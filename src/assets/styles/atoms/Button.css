@@ -1,25 +1,29 @@
 .btn {
-  background-color: #db1a87;
-  color: #fff;
-  display: inline-block;
-  padding: 10px;
-	margin: 0 2px;
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 3px;
   font-size: 12px;
   font-weight: 400;
+
+  display: inline-block;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
+  margin: 0 2px;
+  padding: 10px;
+
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  background-color: #db1a87;
 }
 
 .btn:hover {
-  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.1));
   cursor: pointer;
+
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.1));
 }
 
 .btn:active {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); 
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1));
 }
 
 .btn--inactive {
@@ -27,8 +31,9 @@
 }
 
 .btn--inactive:hover {
-  background-image: none;
   cursor: auto;
+
+  background-image: none;
 }
 
 .btn--inactive:active {
@@ -36,7 +41,8 @@
 }
 
 .btn__icon {
-  width:15px;
+  width: 15px;
+
   vertical-align: middle;
 }
 

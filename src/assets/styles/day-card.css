@@ -1,13 +1,15 @@
 .day-card {
-    border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .day-insert-task {
-    position: relative;
-    border: 0;
-    padding: 0;
+  position: relative;
+
+  padding: 0;
+
+  border: 0;
 }
 
 .day-title {
-    color: red;
+  color: red;
 }

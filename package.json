@@ -7,15 +7,21 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "@storybook/react": "3.0.0-alpha.4",
+    "csscomb": "^4.1.0",
+    "csslint": "^1.0.5",
+    "enzyme": "^2.8.2",
     "react-scripts": "0.9.5",
-    "@storybook/react": "3.0.0-alpha.4"
+    "react-test-renderer": "^15.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "lint:css": "node_modules/.bin/csslint src/assets/styles/day-card.css",
+    "format:css": "node_modules/.bin/csscomb src/assets/styles",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
+    "start-storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   }
 }

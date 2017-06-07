@@ -61,8 +61,7 @@
     "format:css": "node_modules/.bin/csscomb src/assets/styles",
     "start-storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "precommit": "npm run lint:js && npm run lint:css",
-    "prepush": "npm test"
+    "precommit": "npm run lint:js && npm run lint:css"
   },
   "jest": {
     "collectCoverageFrom": [

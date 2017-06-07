@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/day-card.css';
+import '../assets/styles/day-card.css';
 
 class DayCard extends Component {
 

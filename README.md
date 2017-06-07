@@ -48,6 +48,8 @@ $ npm start
 	├── README.md
 	├── CONTRIBUTING.md
 	├── LICENSE.md
+	├── config/
+	├── scripts/
 	├── public/
 	├── src/
 	|   ├── assets/

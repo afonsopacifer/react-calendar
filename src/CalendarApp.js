@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DayCard from './components/DayCard';
-import './styles/CalendarApp.css';
+import './assets/styles/CalendarApp.css';
 
 class CalendarApp extends Component {
 
@@ -16,17 +16,17 @@ class CalendarApp extends Component {
 
   componentDidMount() {
     const allMonths = [
-      {name:"January", days:31}, 
-      {name:"February", days:28}, 
-      {name:"March", days:31}, 
-      {name:"April", days:28}, 
-      {name:"May", days:31}, 
+      {name:"January", days:31},
+      {name:"February", days:28},
+      {name:"March", days:31},
+      {name:"April", days:28},
+      {name:"May", days:31},
       {name:"June", days:30},
-      {name:"July", days:31}, 
-      {name:"August", days:31}, 
-      {name:"September", days:29}, 
-      {name:"October", days:31}, 
-      {name:"November", days:30}, 
+      {name:"July", days:31},
+      {name:"August", days:31},
+      {name:"September", days:29},
+      {name:"October", days:31},
+      {name:"November", days:30},
       {name:"December", days:29}
     ];
 
@@ -72,7 +72,7 @@ class CalendarApp extends Component {
         <main className="days-list">
           {allDays}
         </main>
-        
+
         <footer className="footer">
           <input type="range" min="0" max="12" ref="monthRange" value={this.state.monthNumber} onChange={this.chooseMonth.bind(this)}/>
         </footer>

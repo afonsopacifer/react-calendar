@@ -2,14 +2,14 @@
 
 > The calendar for developers.
 
-## How do we write our code?
+## How we write our code
 
 #### Markup and Behavior with React ecosystem
 
 > **PS:** The Initial scaffolding started with ejected [React Create App](https://github.com/facebookincubator/create-react-app) structure.
 
 React components are based on the [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) philosophy. The entire UI test and the Style Guide are developed in the [Storybook](https://github.com/storybooks/storybook).<br>
-We use the [Afonso Pacifer's JS/JSX Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/css/CSS.md) with [ESLint](http://eslint.org/) for validate the style and code quality.<br>
+We use the [Afonso Pacifer's JS Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/js/JS.md) with [ESLint](http://eslint.org/) for validate the style and code quality.<br>
 All unit tests are created with [Jest](https://facebook.github.io/jest/) and some libs like [enzyme](https://github.com/airbnb/enzyme), [Chai](http://chaijs.com/) etc..
 
 #### Architecture
@@ -64,6 +64,7 @@ $ npm start
 	|   |   └── molecules/
 	|   ├── CalendarApp.js
 	|   └── index.js
+	├── .eslintrc.json
 	├── .csslintrc
 	├── .csscomb.json
 	├── .editorconfig
@@ -75,17 +76,15 @@ $ npm start
 > **PS:** We use [Husky](https://github.com/typicode/husky) to avoid mistakes.
 
 - `$ npm start` - Start the development environment.
-- <s>`$ npm run format`</s> -
-- `$ npm run format:css` - Auto format all CSS files, following the [CSS Style Guide]().
-- <s>`$ npm run lint`</s> -
+- `$ npm run lint:js` - Run CSS Lint following the [Afonso Pacifer's CSS Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/css/CSS.md).
 - `$ npm run lint:css` - Run CSS Lint.
-- <s>`$ npm run lint:js`</s> - Run CSS Lint.
+- `$ npm run format:css` - Auto format all CSS files following the [Afonso Pacifer's JS Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/js/JS.md).
 - `$ npm test` - Run unit test.
-- `$ npm run start-storybook` - Start the UI docs environment.
-- `$ npm run build-storybook` - Build all UI docs.
-- <s>`$ npm run deploy-storybook`</s> -
+- `$ npm run start-storybook` - Start the UI docs/test environment.
+- `$ npm run build-storybook` - Build all UI docs/test.
+- <s>`$ npm run deploy-storybook` - Deploy storybook for gh-pages.</s>
 - `$ npm run build` - Build for production.
-- <s>`$ npm run deploy`</s> - Deploy for gh-pages.
+- <s>`$ npm run deploy` - Deploy App for gh-pages.</s>
 
 ## Contributing
 

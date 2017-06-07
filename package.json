@@ -55,7 +55,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint:css": "node_modules/.bin/csslint src/assets/styles/day-card.css",
+    "lint:js": "node_modules/.bin/eslint src/**/*.js",
+    "lint:css": "node_modules/.bin/csslint src/assets/styles/**/*.css",
     "format:css": "node_modules/.bin/csscomb src/assets/styles",
     "start-storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -88,8 +89,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

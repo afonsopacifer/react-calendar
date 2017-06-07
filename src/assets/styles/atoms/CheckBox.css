@@ -5,6 +5,7 @@
 }
 
 .checkbox__input {
+  box-sizing: border-box;
   position: relative;
 
   width: 24px;
@@ -14,6 +15,7 @@
   border: 1px solid #cacece;
   background-color: #fafafa;
 
+  -moz-appearance: none;
   -webkit-appearance: none;
 }
 

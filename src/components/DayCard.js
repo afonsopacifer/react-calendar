@@ -18,7 +18,7 @@ class DayCard extends Component {
     if (thisDay < today) {
       this.setState({
         oldDay: true
-      })
+      });
     }
   }
 
@@ -28,7 +28,7 @@ class DayCard extends Component {
     const id = taskList.length + 1;
     const newTask = this.refs.newTask;
 
-    if (newTask.value !== "") {
+    if (newTask.value !== '') {
       taskList.push({
         id: id,
         content: newTask.value,
@@ -38,21 +38,21 @@ class DayCard extends Component {
 
     this.setState({
       tasks: taskList
-    })
+    });
 
-    newTask.value = "";
+    newTask.value = '';
   }
 
   removeTask(index) {
     const taskList = this.state.tasks;
 
     const newList = taskList.filter((task) => {
-      return task.id !== index
+      return task.id !== index;
     });
 
     this.setState({
       tasks: newList
-    })
+    });
   }
 
   toggleDone(index) {
@@ -60,30 +60,30 @@ class DayCard extends Component {
 
     const newList = taskList.map((task) => {
 
-      const isChecked = (task.id === index || task.done === true)
-      const toggle = (task.id === index && task.done === true)
+      const isChecked = (task.id === index || task.done === true);
+      const toggle = (task.id === index && task.done === true);
 
       let doneState;
 
       if (toggle) {
-        doneState = false
+        doneState = false;
       } else if (isChecked) {
-        doneState = true
+        doneState = true;
       } else {
-        doneState = false
+        doneState = false;
       }
 
       return ({
         id: task.id,
         content: task.content,
         done: doneState
-      })
+      });
 
     });
 
     this.setState({
       tasks: newList
-    })
+    });
   }
 
   openDialog() {

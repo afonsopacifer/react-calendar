@@ -56,13 +56,13 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint:js": "node_modules/.bin/eslint src/**/*.js",
+    "lint:js": "node_modules/.bin/eslint src",
     "lint:css": "node_modules/.bin/csslint src/assets/styles/**/*.css",
     "format:css": "node_modules/.bin/csscomb src/assets/styles",
     "start-storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "precommit": "npm run lint:js && npm run lint:css",
-    "prepush": "npm test",
+    "prepush": "npm test"
   },
   "jest": {
     "collectCoverageFrom": [

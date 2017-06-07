@@ -1,16 +1,16 @@
 {
   "ignore": [
     "import",
-    "order-alphabetical"
+    "order-alphabetical",
+    "fallback-colors",
+    "box-sizing"
   ],
   "warnings": [
     "adjoining-classes",
-    "box-sizing",
     "compatible-vendor-prefixes",
     "gradients",
     "text-indent",
     "vendor-prefix",
-    "fallback-colors",
     "star-property-hack",
     "underscore-property-hack",
     "bulletproof-font-face",

@@ -1,3 +1,5 @@
+/*eslint max-len: ["error", { "ignoreUrls": true }]*/
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
@@ -17,7 +19,7 @@ const customStyle = {
   delete: {
     backgroundColor: '#fc3c4f'
   }
-}
+};
 
 storiesOf('Button', module)
   .add('default', () => {
@@ -25,7 +27,7 @@ storiesOf('Button', module)
       <Button>
         Button
       </Button>
-    )
+    );
   })
   .add('Inactive', () => {
     return (
@@ -33,7 +35,7 @@ storiesOf('Button', module)
         isActive={false}>
         Button
       </Button>
-    )
+    );
   })
   .add('With left icon', () => {
     return (
@@ -41,7 +43,7 @@ storiesOf('Button', module)
         leftIcon="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-rocket-20.png&r=255&g=255&b=255">
         Button
       </Button>
-    )
+    );
   })
   .add('With right icon', () => {
     return (
@@ -49,7 +51,7 @@ storiesOf('Button', module)
         rightIcon="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2016/png/iconmonstr-weather-76.png&r=255&g=255&b=255">
         Button
       </Button>
-    )
+    );
   })
   .add('With custom style', () => {
     return (
@@ -70,37 +72,37 @@ storiesOf('Button', module)
           Delete
         </Button>
       </div>
-    )
-  })
+    );
+  });
 
 storiesOf('CheckBox', module)
   .add('default', () => {
     return (
-      <CheckBox id = "myCheckbox">
+      <CheckBox id="myCheckbox">
       </CheckBox>
-    )
+    );
   })
   .add('With label', () => {
     return (
       <CheckBox
-        id = "myCheckbox"
-        label = "Label">
+        id="myCheckbox"
+        label="Label">
       </CheckBox>
-    )
+    );
   })
   .add('Checked', () => {
     return (
       <CheckBox
-        id = "myCheckbox"
-        label = "Label"
-        isChecked = {true}>
+        id="myCheckbox"
+        label="Label"
+        isChecked={true}>
       </CheckBox>
-    )
-  })
+    );
+  });
 
 storiesOf('DayTodo', module)
   .add('default', () => {
     return (
       <DayTodo></DayTodo>
-    )
-  })
+    );
+  });

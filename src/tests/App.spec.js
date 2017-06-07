@@ -8,4 +8,4 @@ describe('<Button/>', () => {
     shallow(<Button>dsds</Button>);
   });
 
-})
+});

@@ -1,4 +1,5 @@
 .day-todo__input {
+  box-sizing: border-box;
   font-size: 12px;
 
   width: 100%;

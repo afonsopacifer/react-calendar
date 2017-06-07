@@ -1,6 +1,30 @@
 # React Calendar
 
->
+> The calendar for developers.
+
+## How do we write our code?
+
+#### Markup and Behavior with React ecosystem
+
+> **PS:** The Initial scaffolding started with ejected [React Create App](https://github.com/facebookincubator/create-react-app) structure.
+
+React components are based on the [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) philosophy. The entire UI test and the Style Guide are developed in the [Storybook](https://github.com/storybooks/storybook).<br>
+We use the [Afonso Pacifer's JS/JSX Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/css/CSS.md) with [ESLint](http://eslint.org/) for validate the style and code quality.<br>
+All unit tests are created with [Jest](https://facebook.github.io/jest/) and some libs like [enzyme](https://github.com/airbnb/enzyme), [Chai](http://chaijs.com/) etc..
+
+#### Architecture
+
+Simple [Flux](http://facebook.github.io/flux/) implementation with [Redux](http://redux.js.org/).
+
+#### Offline support
+
+All static files are cached with [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and client side database is [IndexedDB](https://www.w3.org/TR/IndexedDB/) with [Dexie.js](http://dexie.org/) abstractions.
+
+
+#### Style with vanilla CSS
+
+We use the [Afonso Pacifer's CSS Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/css/CSS.md) with [CSScomb](http://csscomb.com/) self-formatting. CSS is organized into components based on the [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) philosophy using [CSS modules](https://github.com/css-modules/css-modules) and organized internally with [BEM](http://getbem.com/naming/) pattern.
+
 
 ## Run the project locally
 
@@ -26,55 +50,38 @@ $ npm start
 	├── LICENSE.md
 	├── public/
 	├── src/
-	|   ├── tests/
-	|   ├── stories/
-	|   ├── components/
-	|   |   ├── atoms/
-	|   |   └── molecules/
 	|   ├── assets/
 	|   |   ├── icons/
 	|   |   └── styles/
 	|   |       ├── atoms/
 	|   |       └── molecules/
+	|   ├── tests/
+	|   ├── stories/
+	|   ├── components/
+	|   |   ├── atoms/
+	|   |   └── molecules/
 	|   ├── CalendarApp.js
 	|   └── index.js
-	├── package.json
+	├── .csslintrc
+	├── .csscomb.json
 	├── .editorconfig
-	└── .gitignore
-
-## Code Style Guide
-
-### CSS
-
-The basic code style guide used is the [Afonso Pacifer Code Style Guide](https://github.com/afonsopacifer/code-style-guide/blob/master/css/CSS.md).<br>
-The CSS are organized in components based in [Atomic Design]() philosophy using [CSS modules](). The components code are organized with [BEM]() pattern.
+	├── .gitignore
+	└── package.json
 
 ## Tasks available
 
-*Development Environment:*
+> **PS:** We use [Husky](https://github.com/typicode/husky) to avoid mistakes.
 
 - `$ npm start` - Start the development environment.
-
-*Code Quality:*
-
 - <s>`$ npm run format`</s> -
 - `$ npm run format:css` - Auto format all CSS files, following the [CSS Style Guide]().
 - <s>`$ npm run lint`</s> -
 - `$ npm run lint:css` - Run CSS Lint.
 - <s>`$ npm run lint:js`</s> - Run CSS Lint.
-
-*Tests:*
-
 - `$ npm test` - Run unit test.
-
-*Docs:*
-
 - `$ npm run start-storybook` - Start the UI docs environment.
 - `$ npm run build-storybook` - Build all UI docs.
 - <s>`$ npm run deploy-storybook`</s> -
-
-*Deploy:*
-
 - `$ npm run build` - Build for production.
 - <s>`$ npm run deploy`</s> - Deploy for gh-pages.
 
